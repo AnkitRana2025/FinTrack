@@ -362,6 +362,6 @@ const analyticsLogoutBtn = document.getElementById("logoutBtn");
 if (analyticsLogoutBtn) {
     analyticsLogoutBtn.addEventListener("click", () => {
         logoutUser();
-        window.location.href = "index.html";
+        window.location.href = "../../index.html";
     });
 }
