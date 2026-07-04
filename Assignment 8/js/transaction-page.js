@@ -480,5 +480,5 @@ tableBody.addEventListener("click", e => {
 
 logoutBtn.addEventListener("click", () => {
     logoutUser();
-    window.location.href = "index.html";
+    window.location.href = "../../index.html";
 });
