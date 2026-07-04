@@ -19,7 +19,6 @@ loginForm.addEventListener("submit", (e) => {
 
   localStorage.setItem("currentUser", JSON.stringify(validUser));
 
-  alert("Login Successful");
 
   window.location.href = "dashboard.html";
 });
