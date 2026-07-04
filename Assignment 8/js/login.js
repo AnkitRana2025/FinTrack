@@ -20,5 +20,5 @@ loginForm.addEventListener("submit", (e) => {
   localStorage.setItem("currentUser", JSON.stringify(validUser));
 
 
-  window.location.href = "dashboard.html";
+  window.location.href = "Assignment 8/dashboard.html";
 });
