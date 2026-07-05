@@ -4,65 +4,103 @@
   box-sizing: border-box;
 }
 
-html, body {
+html, body{
   width: 100%;
-  height: 100%;
+  min-height: 100%;
 }
 
-body {
+body{
   font-family: 'Poppins', sans-serif;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
+
 form{
-  padding: 20px 40px;
-  height: 70%;
-  width: 30%;
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
   background-color: #0A0721;
   border-radius: 20px;
   border: 1px solid white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
+  gap: 30px;
 }
+
 .detail{
   display: flex;
   flex-direction: column;
 }
+
 .detail label{
-  padding-top: 20px;
-}
-.detail input{
+  padding-bottom: 8px;
   color: white;
-  padding: 10px 40px 10px 10px;
-  text-align: left;
+}
+
+.detail input{
+  width: 100%;
+  color: white;
+  padding: 12px;
   outline: none;
   border: 1px solid #6223CB;
   border-radius: 10px;
   background-color: #0A0721;
 }
+
 input::placeholder{
-  position: relative;
-  left: -5%;
+  color: #aaa;
 }
+
 button{
-  cursor: pointer;
-  padding: 10px 45px;
+  width: 100%;
+  padding: 12px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: #6223CB;
-  color: #fff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
 }
+
+span,
 label{
   color: white;
 }
-span{
-  color: white;
-}
+
 a:hover{
   color: royalblue;
 }
+
+/* Tablet */
+@media (max-width: 768px){
+  form{
+    max-width: 400px;
+    padding: 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px){
+  body{
+    padding: 15px;
+  }
+
+  form{
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .detail input{
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  button{
+    padding: 12px;
+    font-size: 15px;
+  }
+  }
